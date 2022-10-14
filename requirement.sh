@@ -1,6 +1,4 @@
 docker pull ubuntu:18.04
-git clone https://github.com/AkshayGondaliya/task.git
-cd task
 xhost +
 docker run -ti --net=host -e DISPLAY=$DISPLAY --name=wobottask -v ${PWD}:/datadrive ubuntu:18.04
 cd datadrive
